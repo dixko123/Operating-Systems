@@ -22,7 +22,14 @@ public class Problema1<E> extends LinkedList<E> {
 		
 	}
 	public static void main(String[] args) {
+		long startTime = System.nanoTime();
 		Problema1<String> p = new Problema1<>();
 		p.buscaRepetido();
+		
+
+		long endTime   = System.nanoTime();
+		long totalTime = endTime - startTime;
+		System.out.println("Program run time: " + totalTime + " ns");
+				
 	}
 }
